@@ -13,6 +13,7 @@ try:
         user=user,
         dbname=database,
         password=password
+        
     )
 
     # Crear cursor para ejecutar consultas
@@ -33,3 +34,4 @@ finally:
     # Cerrar la conexión
     if 'conn' in locals():
         conn.close()
+
